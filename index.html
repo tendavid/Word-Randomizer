@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Randomizer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        textarea {
+            width: 90%;
+            height: 100px;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #output {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            background: #f9f9f9;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .word-block {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+            text-transform: capitalize;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Word Randomizer <br> <small>by Skye Ten</small></h1> <!-- Added by Skye Ten -->
+    <textarea id="wordInput" placeholder="Paste your list of words here (one per line or separated by commas)..."></textarea><br>
+    <button onclick="randomizeWords()">Randomize</button>
+    <button onclick="clearAll()">Clear</button>
+    <div id="output"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
